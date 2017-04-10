@@ -1,0 +1,29 @@
+@import "../commons/all";
+
+// chuck other GLOBAL/base variables here //
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.seo {
+	overflow: hidden;
+	text-indent: -999px;
+	display: block;
+	line-height: 1px;
+	margin: 0px;
+	padding: 0px;
+}
+
+[data-toggle] {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.tab-box {
+    .tab-header {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 2.5em;
+
+        .header {
+            position: relative;
+            display: block;
+            padding: 15px 35px;
+            margin-right: 0.5em;
+            float: left;
+            font-size: 1em;
+            line-height: 1;
+            cursor: pointer;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            border-bottom: 0;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+            &.active {
+                color: #0081C3;
+                background-color: #fff;
+                &:before, 
+                &:after {
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                }
+                &:before {
+                    top: 0;
+                    bottom: auto;
+                    height: .275em;
+                    background-color: $primary-font-colour;
+                }
+                &:after {
+                    top: auto;
+                    bottom: -1px;
+                    height: .25em;
+                    background-color: #fff;
+                }
+            }
+
+        }
+    }
+}

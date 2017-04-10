@@ -1,0 +1,21 @@
+// Watch this main only, no need to import modules for individual components
+
+// all modules and other global variables
+@import "components/base";
+
+// vendors
+@import "vendors/fontawesome";
+@import "vendors/bootstrap";
+
+// components
+@import "components/accordion";
+@import "components/buttons";
+@import "components/form";
+@import "components/gallery";
+@import "components/header";
+@import "components/reset";
+@import "components/typography";
+@import "components/utilities";
+@import "components/tabs";
+
+// modules - your custom modules

@@ -1,0 +1,54 @@
+html, body {
+	font-family: $primary-font-stack;
+	font-size: $font-size--body-lg + unquote("px"); 
+	line-height: $line-height--body-lg + unquote("px");
+	color: $primary-font-colour;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@media (max-width: $max-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm + unquote("px");}
+	@media (min-width: $min-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm + unquote("px");}
+	@media (min-width: $min-width--md)  { font-size: $font-size--body-md + unquote("px"); line-height: $line-height--body-md + unquote("px");}
+	@media (min-width: $min-width--lg) { font-size: $font-size--body-lg + unquote("px"); line-height: $line-height--body-lg + unquote("px");}
+} 
+
+
+
+h1, .h1 {
+	font-size: $font-size--h1 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h1 / $line-height--body-lg + unquote("rem");
+}
+
+h2, .h2 {
+	font-size: $font-size--h2 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h2 / $line-height--body-lg + unquote("rem");
+}
+h3, .h3 {
+	font-size: $font-size--h3 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h3 / $line-height--body-lg + unquote("rem");
+}
+h4, .h4 {
+	font-size: $font-size--h4 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h4 / $line-height--body-lg + unquote("rem");
+}
+h5, .h5 {
+	font-size: $font-size--h5 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h5 / $line-height--body-lg + unquote("rem");
+}
+h6, .h6 {
+	font-size: $font-size--h6 / $font-size--body-lg + unquote("rem");
+	line-height: $line-height--h6 / $line-height--body-lg + unquote("rem");
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:  $heading-font-stack;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	font-weight: normal;
+	text-transform: uppercase;
+} 
+
+a, a:hover {
+	color: $primary-font-colour;
+}

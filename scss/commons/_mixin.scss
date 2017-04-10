@@ -1,0 +1,16 @@
+
+@mixin add-transition() {
+    -o-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+@mixin menu-toggle-transition() {
+    -o-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+    -moz-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+    -webkit-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+    -ms-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+    transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+}

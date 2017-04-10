@@ -1,0 +1,80 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a, a:hover, a:active, a:focus {
+	outline: none !important;
+	text-decoration: none;
+}
+
+input,
+select,
+textarea
+{
+	-o-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-o-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	border: none;
+	outline: none;
+	outline: none;
+	text-decoration: none;
+}
+
+#header .main-nav .menu-toggle {
+	display: block;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.button {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0px;
+}
+
+.button:hover,
+.button:active,
+.button:link,
+.button:focus,
+.button:visited {
+	text-decoration: none;
+	outline: 0;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+}
