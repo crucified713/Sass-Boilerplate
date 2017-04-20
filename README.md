@@ -2,6 +2,8 @@
 A structured Sass mockup that you can start your new project with
 
 ## How To
+`npm install` first.
+
 You can either 
 `grunt` or `gulp`
 
