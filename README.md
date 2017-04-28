@@ -2,7 +2,8 @@
 A structured Sass mockup that you can start your new project with
 
 ## How To
-`npm install` first.
+`git clone https://github.com/crucified713/Sass-Mockup.git` into your local directory,
+and then `npm install` 
 
 You can either 
 `grunt` or `gulp`
