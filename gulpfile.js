@@ -23,6 +23,7 @@ gulp.task('sass', function() {
   return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in main.css.source/styles and children dirs
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError)) // Passes it through gulp-sass and deal with errors
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('dist/')); // Outputs it in the css folder
 })
 
