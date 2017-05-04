@@ -1,0 +1,55 @@
+.notifications {
+	p {
+		display: block;
+		font-family: $button-font-stack;
+		color: $notification-success-font-colour;
+		background: $notification-success-background-colour;
+		font-size: 0.875rem;
+		font-weight: normal;
+		text-transform: none;
+		text-align: center;
+		padding: 0.8125rem 0.375rem 0.8125rem 0.375rem;
+		border: 0px;
+		-o-border-radius: $input-radius;
+		-moz-border-radius: $input-radius;
+		-webkit-border-radius: $input-radius;
+		-ms-border-radius: $input-radius;
+		border-radius: $input-radius;
+		text-align: center;
+	}
+}
+
+.notifications--success {
+	p {
+		color: $notification-success-font-colour;
+		background: $notification-success-background-colour;
+	}
+}
+
+.notifications--danger {
+	p {
+		color: $notification-danger-font-colour;
+		background: $notification-danger-background-colour;
+	}
+}
+
+.notifications--info {
+	p {
+		color: $notification-info-font-colour;
+		background: $notification-info-background-colour;
+	}
+}
+
+.notifications--warning {
+	p {
+		color: $notification-warning-font-colour;
+		background: $notification-warning-background-colour;
+	}
+}
+
+.notifications--neutral {
+	p {
+		color: $notification-neutral-font-colour;
+		background: $notification-neutral-background-colour;
+	}
+}
