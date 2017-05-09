@@ -1,4 +1,4 @@
-# Sass-Mockup
+# Sass-Setup
 A structured Sass mockup that you can start your new project with
 
 ## How To
