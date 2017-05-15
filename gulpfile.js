@@ -39,18 +39,6 @@ gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['sass']);
 })
 
-// Optimization Tasks 
-// ------------------
-
-// Optimizing Images 
-gulp.task('images', function() {
-  return gulp.src('../../images/**/*.+(png|jpg|jpeg|gif|svg)')
-    // Caching images that ran through imagemin
-    .pipe(cache(imagemin({
-      interlaced: true,
-    })))
-    .pipe(gulp.dest('../../images'))
-});
 
 // Build Sequences
 // ---------------
@@ -61,19 +49,6 @@ gulp.task('clear', function (done) {
 
 gulp.task('default', function(callback) {
   runSequence(['sass', 'watch'],
-    callback
-  )
-})
-
-gulp.task('sass:only', function(callback) {
-  runSequence(['sass', 'watch'],
-    callback
-  )
-})
-
-gulp.task('build', function(callback) {
-  runSequence(
-    ['sass', 'images'],
     callback
   )
 })
