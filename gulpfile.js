@@ -24,7 +24,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError)) // Passes it through gulp-sass and deal with errors
     .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest('dist/')); // Outputs it in the css folder
+    .pipe(gulp.dest('css/')); // Outputs it in the css folder
 })
 
 gulp.task('sass:production', function() {
