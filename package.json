@@ -13,7 +13,7 @@
     "gulp-cssnano": "*",
     "gulp-if": "*",
     "gulp-sass": "*",
-    "gulp-sourcemaps": "*",
+    "gulp-sourcemaps": "^2.6.0",
     "run-sequence": "*"
   }
 }

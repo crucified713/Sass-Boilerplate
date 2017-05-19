@@ -19,26 +19,25 @@
 	&:visited {
 		color: $primary-button-font-colour--hover;
 	}
+	&.button--primary {
+		background: $primary-button-background-colour;
+	}
+
+	&.button--secondary {
+		background: $secondary-button-background-colour;
+	}
+	&.button--arror:after {
+		content: "\f054";
+		display:inline-block;
+		font:normal normal normal 14px/1 FontAwesome;
+		font-size:inherit;
+		text-rendering:auto;
+		-webkit-font-smoothing:antialiased;
+		-moz-osx-font-smoothing:grayscale;
+		transform:translate(0, 0);
+		margin-left: 0.5em;
+	}
 }
 
-.button.arrow:after {
-	content: "\f054";
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	transform:translate(0, 0);
-	margin-left: 0.5em;
-}
 
-.button-primary {
-	@extend .button;
-	background: $primary-button-background-colour;
-}
 
-.button-secondary {
-	@extend .button;
-	background: $secondary-button-background-colour;
-}
