@@ -1,10 +1,14 @@
 // Watch this main only, no need to import modules for individual components
 
-// all modules and other global variables
-@import "components/base";
+// variables and reusable functions (mixins)
+@import "fonts";
+@import "colour";
+@import "mixin";
+@import "typography";
+@import "breakpoints";
 
-// components
-@import "components/accordion";
+// standalone modules/components
+@import "components/base";
 @import "components/buttons";
 @import "components/form";
 @import "components/notifications";
@@ -13,7 +17,5 @@
 @import "components/reset";
 @import "components/typography";
 @import "components/utilities";
-@import "components/tabs";
 
 // modules - your custom modules
-@import "pages/projects";
