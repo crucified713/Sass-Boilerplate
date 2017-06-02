@@ -99,6 +99,7 @@ html.ie8 .custom-select select {
 	line-height: 1em !important;
 }
 
+
 .custom-checkbox {
 	-webkit-user-select: none; 
 	-moz-user-select: none; 
@@ -107,12 +108,9 @@ html.ie8 .custom-select select {
 	user-select: none; 
 	margin-bottom: 1.125em;
 	cursor: pointer;
-	font-size: 0.875em;
-	font-family:"helvetica-neue", arial, helvetica, sans-serif;
-	letter-spacing: 0px;
 	font-weight: normal;
 
-	.checkbox  {
+	&__checkbox  {
 		display: block;
 		float: left;
 		position: relative;
@@ -122,25 +120,24 @@ html.ie8 .custom-select select {
 		background-color: #ffffff;
 		border-radius: 4px;
 		margin: 0px;
-		margin-top: -0.1875em;
+		margin-top: 0.1875em;
 		margin-right: -2em;
 		text-align: center;
 		line-height: 1;
-		vertical-align: middle;
-		-o-transition: background-color 0.25s ease;
-		-moz-transition: background-color 0.25s ease;
-		-webkit-transition: background-color 0.25s ease;
-		-ms-transition: background-color 0.25s ease;
-		transition: background-color 0.25s ease;
+		&--circle {
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+		}
+		&--has-error {
+			border: 1px solid $red;
+		} 
 	}
-	input[type=checkbox] {
+	&__input {
 		display: none;
 	}
-	input[type=checkbox]:checked + .checkbox {
-		background-color: #7AC142;
-		border-color: transparent;
-	}
-	input[type=checkbox]:checked + .checkbox:after {
+
+	&__input:checked + &__checkbox:after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -148,13 +145,10 @@ html.ie8 .custom-select select {
 		right: 0px;
 		bottom: 0px;
 		left: 0px;
-		margin: auto;
-		width: 1em;
-		height: 0.75em;
-		background: transparent url('/assets/images/icon-tick-white.png') no-repeat center center;
-		background-size: auto 0.75em;
+		background: transparent url('/assets/images/icon-blue-circle.png') no-repeat center center;
+		background-size: 1em;
 	}
-	.checkbox-text {
+	&__label {
 		display: inline-block;
 		margin-left: 2em;
 		font-size: 1em;
@@ -163,20 +157,20 @@ html.ie8 .custom-select select {
 		font-weight: normal;
 		text-align: left;
 	}
-	.checkbox-text > span {
-		display: inline-block;
-		font-size: 0.8125em;
-		line-height: 1.25;
-	}
 }
 
-html.ie8 .custom-checkbox input[type=checkbox] {
-	display: inline-block;
-	float: left;
+html.ie8 {
+  .custom-checkbox {
+    &__input {
+      display: inline-block;
+      float: left;
+    }
+    &__checkbox {
+      display: none;
+    }
+  }
 }
-html.ie8 .custom-checkbox .checkbox {
-	display: none;
-}
+
 .custom-checkbox .disabled + *,
 .custom-checkbox .disabled ~ * {
 	-o-opacity: 0.35;
