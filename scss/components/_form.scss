@@ -171,6 +171,85 @@ html.ie8 {
   }
 }
 
+.custom-radio {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+	margin-bottom: 1.125em;
+	cursor: pointer;
+	font-weight: normal;
+
+	&__radio  {
+		display: block;
+		float: left;
+		position: relative;
+		width: 1.625em;
+		height: 1.625em;
+		border: 1px solid #d8d8d8;
+		background-color: #ffffff;
+		border-radius: 4px;
+		margin: 0px;
+		margin-top: 0.1875em;
+		margin-right: -2em;
+		text-align: center;
+		line-height: 1;
+		vertical-align: middle;
+    &--circle {
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
+    &--has-error {
+      border: 1px solid $red;
+    } 
+    
+	}
+	&__input {
+		display: none;
+	}
+	&__input:checked + &__radio {
+	}
+	&__input:checked + &__radio:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background: transparent url('/assets/images/icon-blue-circle.png') no-repeat center center;
+		background-size: 1em;
+	}
+  &__input:checked + &__radio--tick:after {
+		background: transparent url('/assets/images/icon-tick-blue.png') no-repeat center center;
+		background-size: 1.5em;
+	}
+	&__label {
+		display: inline-block;
+		margin-left: 2em;
+		font-size: 1em;
+		vertical-align: middle;
+		max-width: 95%;
+		font-weight: normal;
+		text-align: left;
+	}
+}
+
+html.ie8 {
+  .custom-radio {
+    &__input {
+      display: inline-block;
+      float: left;
+    }
+    &__radio {
+      display: none;
+    }
+  }
+}
+
+
 .custom-checkbox .disabled + *,
 .custom-checkbox .disabled ~ * {
 	-o-opacity: 0.35;
