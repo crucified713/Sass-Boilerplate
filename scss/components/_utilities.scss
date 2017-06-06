@@ -106,12 +106,18 @@
 	padding-right: 0px !important;
 }
 
-.valign-parent {
+
+/**
+	updated Jun 2017
+	- using classname as selector to prevent override
+	- applying BEM
+**/
+.valign {
 	height: 100%;
 	width: 100%;
 	display: block;
 }
-.valign {
+.valign__content {
 	display: inline-block;
 	vertical-align: middle;
 	width: 100%;
@@ -120,7 +126,7 @@
 	padding-left: 0.25em;
 	padding-right: 0.25em;
 }
-i.valign {
+.valign__placeholder {
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
