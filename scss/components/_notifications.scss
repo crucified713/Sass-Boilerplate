@@ -4,7 +4,7 @@
 	p {
 		display: block;
 		font-family: $button-font-stack;
-		color: $notification-success-font-colour;
+		color: $notification-font-colour;
 		font-size: 0.875rem;
 		font-weight: normal;
 		text-transform: none;
@@ -23,7 +23,7 @@
 	.notifications--success {
 		background: $notification-success-background-colour;
 		p {
-			color: $notification-success-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}
@@ -31,14 +31,14 @@
 	.notifications--danger {
 		background: $notification-danger-background-colour;
 		p {
-			color: $notification-danger-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}
 	.notifications--error {
 		background: $notification-danger-background-colour;
 		p {
-			color: $notification-danger-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}
@@ -46,7 +46,7 @@
 	.notifications--info {
 		background: $notification-info-background-colour;
 		p {
-			color: $notification-info-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}
@@ -54,7 +54,7 @@
 	.notifications--warning {
 		background: $notification-warning-background-colour;
 		p {
-			color: $notification-warning-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}
@@ -62,7 +62,7 @@
 	.notifications--neutral {
 		background: $notification-neutral-background-colour;
 		p {
-			color: $notification-neutral-font-colour;
+			color: $notification-font-colour;
 			
 		}
 	}

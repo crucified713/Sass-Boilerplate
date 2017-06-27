@@ -196,15 +196,14 @@ html.ie8 {
 		text-align: center;
 		line-height: 1;
 		vertical-align: middle;
-    &--circle {
-      border-radius: 50%;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-    }
-    &--has-error {
-      border: 1px solid $red;
-    } 
-    
+		&--circle {
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		}
+		&--has-error {
+		border: 1px solid $red;
+		} 
 	}
 	&__input {
 		display: none;
@@ -222,7 +221,7 @@ html.ie8 {
 		background: transparent url('/assets/images/icon-blue-circle.png') no-repeat center center;
 		background-size: 1em;
 	}
-  &__input:checked + &__radio--tick:after {
+  	&__input:checked + &__radio--tick:after {
 		background: transparent url('/assets/images/icon-tick-blue.png') no-repeat center center;
 		background-size: 1.5em;
 	}

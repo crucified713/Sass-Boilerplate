@@ -1,11 +1,12 @@
 // Watch this main only, no need to import modules for individual components
 
 // variables and reusable functions (mixins)
-@import "fonts";
-@import "colour";
-@import "mixin";
-@import "typography";
-@import "breakpoints";
+@import "commons/fonts";
+@import "commons/colour";
+@import "commons/mixin";
+@import "commons/typography";
+@import "commons/breakpoints";
+@import "commons/forms";
 
 // standalone modules/components
 @import "components/base";
