@@ -1,44 +1,41 @@
 html, body {
 	font-family: $primary-font-stack;
 	font-size: $font-size--body-lg + unquote("px"); 
-	line-height: $line-height--body-lg + unquote("px");
+	line-height: $line-height--body-lg / $font-size--body-lg;
 	color: $primary-font-colour;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	@media (max-width: $max-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm + unquote("px");}
-	@media (min-width: $min-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm + unquote("px");}
-	@media (min-width: $min-width--md)  { font-size: $font-size--body-md + unquote("px"); line-height: $line-height--body-md + unquote("px");}
-	@media (min-width: $min-width--lg) { font-size: $font-size--body-lg + unquote("px"); line-height: $line-height--body-lg + unquote("px");}
+	@media (max-width: $max-width--xs)  { font-size: $font-size--body-xs + unquote("px"); line-height: $line-height--body-xs / $font-size--body-xs; }
+	@media (min-width: $min-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm / $font-size--body-sm; }
+	@media (min-width: $min-width--md)  { font-size: $font-size--body-md + unquote("px"); line-height: $line-height--body-md / $font-size--body-md; }
+	@media (min-width: $min-width--lg)  { font-size: $font-size--body-lg + unquote("px"); line-height: $line-height--body-lg / $font-size--body-lg; }
 } 
-
-
 
 h1, .h1 {
 	font-size: $font-size--h1 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h1 + unquote("px");
+	line-height: $line-height--h1 / $font-size--h1;
 }
 
 h2, .h2 {
 	font-size: $font-size--h2 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h2 + unquote("px");
+	line-height: $line-height--h2 /$font-size--h2;
 }
 h3, .h3 {
 	font-size: $font-size--h3 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h3 + unquote("px");
+	line-height: $line-height--h3 / $font-size--h3;
 }
 h4, .h4 {
 	font-size: $font-size--h4 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h4 + unquote("px");
+	line-height: $line-height--h4 / $font-size--h4;
 }
 h5, .h5 {
 	font-size: $font-size--h5 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h5 + unquote("px");
+	line-height: $line-height--h5 / $font-size--h5;
 }
 h6, .h6 {
 	font-size: $font-size--h6 / $font-size--body-lg + unquote("rem");
-	line-height: $line-height--h6 + unquote("px");
+	line-height: $line-height--h6 / $font-size--h6;
 }
 
 h1, h2, h3, h4, h5, h6 {
