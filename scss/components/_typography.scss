@@ -6,10 +6,10 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@media (max-width: $max-width--xs)  { font-size: $font-size--body-xs + unquote("px"); line-height: $line-height--body-xs / $font-size--body-xs; }
-	@media (min-width: $min-width--sm)  { font-size: $font-size--body-sm + unquote("px"); line-height: $line-height--body-sm / $font-size--body-sm; }
-	@media (min-width: $min-width--md)  { font-size: $font-size--body-md + unquote("px"); line-height: $line-height--body-md / $font-size--body-md; }
-	@media (min-width: $min-width--lg)  { font-size: $font-size--body-lg + unquote("px"); line-height: $line-height--body-lg / $font-size--body-lg; }
+	@media (max-width: $max-width--xs)  { font-size: $font-size--body-xs + unquote("px");}
+	@media (min-width: $min-width--sm)  { font-size: $font-size--body-sm + unquote("px");}
+	@media (min-width: $min-width--md)  { font-size: $font-size--body-md + unquote("px");}
+	@media (min-width: $min-width--lg)  { font-size: $font-size--body-lg + unquote("px");}
 } 
 
 h1, .h1 {
