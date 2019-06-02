@@ -1,0 +1,45 @@
+.page-register .page-content {
+	margin-top: 4.75em;
+	margin-bottom: 2.75em;
+
+	.heading {
+		text-transform: uppercase;
+		width: 15em;
+	}
+
+	.wysiwyg-content {
+		width: 25em;
+	}
+}
+
+#info-box {
+	background-color: #ededed;
+	color: #2A3238;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+}
+
+#info-box.success {
+	background-color: #B3F2D2;
+	color: #00B257;
+}
+
+#info-box.error {
+	background-color: #F2B8B3;
+	color: #BC2500;
+}
+
+#info-box .notification-close {
+	float: right;
+	margin-top: 0.25em;
+	cursor: pointer;
+}
+
+.addthis_inline_share_toolbox {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  visibility: hidden;
+  opacity: 0;
+}

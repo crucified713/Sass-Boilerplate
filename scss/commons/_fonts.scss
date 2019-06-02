@@ -1,5 +1,9 @@
-// @font-face{
-//     font-family:"Helvetica Neue Thin";
-//     src:url("../fonts/d63f77e2-a23d-496f-bc30-c61c7a689aa6.eot?#iefix");
-//     src:url("../fonts/d63f77e2-a23d-496f-bc30-c61c7a689aa6.eot?#iefix") format("eot"),url("../fonts/4ff9f3fa-9221-4fc5-97e6-93572b6efa24.woff2") format("woff2"),url("../fonts/ca8d25cd-e264-4404-b271-4afc45c779c4.woff") format("woff"),url("../fonts/e8f8260f-dbee-4daa-81a4-0e415715c569.ttf") format("truetype"),url("../fonts/307413a4-d77e-4111-8ba5-e3b7d1e7c160.svg#307413a4-d77e-4111-8ba5-e3b7d1e7c160") format("svg");
-// }
+// An example for your convenience
+@font-face {
+  font-family: "xxx";
+  src: url("../fonts/xxx/xxx.woff2") format("woff2"),
+    url("../fonts/xxx/xxx.woff") format("woff"),
+    url("../fonts/xxx/xxx.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

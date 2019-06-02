@@ -1,0 +1,63 @@
+.flexbox {
+  .flex-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    flex-wrap: wrap;
+    &--horizontal {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+    }
+    &--verticle {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+    }
+    &--center {
+      align-items: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+    }
+    &--justify {
+      justify-content: center;
+      -webkit-justify-content: center;
+      -ms-justify-content: center;
+    }
+    &--full-height {
+      height: 100%;
+    }
+  }
+  .flex-image-center {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    img {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.no-flexbox {
+  .flex-row {
+    display: block;
+    clear: both;
+    margin: 1em 0;
+  }
+  .flex-col {
+    width: 100%;
+  }
+  .flex-image-center {
+    @extend .image-center;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,22 +1,16 @@
-// Watch this main only, no need to import modules for individual components
-
-// variables and reusable functions (mixins)
 @import "commons/fonts";
 @import "commons/colour";
 @import "commons/mixin";
 @import "commons/typography";
 @import "commons/breakpoints";
-@import "commons/forms";
 
-// standalone modules/components
 @import "components/base";
-@import "components/buttons";
-@import "components/form";
-@import "components/notifications";
-@import "components/gallery";
-@import "components/header";
-@import "components/reset";
 @import "components/typography";
-@import "components/utilities";
+@import "components/forms";
+@import "components/header";
+@import "components/footer";
+@import "components/gallery";
+@import "components/custom";
+@import "components/flexbox";
 
-// modules - your custom modules
+@import "sections/articles";

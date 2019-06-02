@@ -1,26 +1,33 @@
-$primary-font-stack: sarif;
-$secondary-font-stack: sarif;
-$heading-font-stack: sarif;
-$button-font-stack: sarif;
+$primary-font-stack: times, serif;
+$heading-font-stack: times, serif;
+$button-font-stack: helvetica, arial, sans-serif;
+
 
 // fonts size value without unit
-$font-size--body-sm: 14;
-$font-size--body-md: 16;
+$font-size--body-xs: 14;
+$font-size--body-sm: 12;
+$font-size--body-md: 14;
 $font-size--body-lg: 16;
 
-$font-size--h1: 48;
-$font-size--h2: 36;
+$line-height--body-xs: 21;
+$line-height--body-sm: 15;
+$line-height--body-md: 18;
+$line-height--body-lg: 24;
+
+
+$font-size--h1: 42;
+$font-size--h2: 34;
 $font-size--h3: 30;
 $font-size--h4: 24;
 $font-size--h5: 18;
 $font-size--h6: 16;
 
-$line-height--body-sm: 24;
-$line-height--body-md: 24;
-$line-height--body-lg: 24;
-$line-height--h1: 60;
-$line-height--h2: 42;
+$line-height--h1: 48;
+$line-height--h2: 40;
 $line-height--h3: 36;
 $line-height--h4: 30;
 $line-height--h5: 24;
 $line-height--h6: 21;
+
+
+

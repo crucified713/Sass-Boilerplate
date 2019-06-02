@@ -1,0 +1,331 @@
+label {
+	font-family: $primary-font-stack;
+	font-weight: normal;
+	font-style: normal;
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 0px;
+	margin: 0px;
+	outline: none;
+	display: block;
+	color: $input-font-colour;
+}
+
+input, textarea, select {
+	font-family: $primary-font-stack;
+	margin: 0px;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.875rem;
+	line-height: 1;
+	vertical-align: middle;
+	-o-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 0px;
+	border-bottom: 2px solid $input-border-colour;
+	border-radius: 0px;
+	-o-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance:none;
+	outline: none;
+	display: block;
+	padding: 1em;
+	width: 100%;
+	color: $input-font-colour;
+	background-color: $input-background-colour;
+	margin-bottom: 1.125rem;
+	@include add-transition();
+}
+
+input:active, input:focus, 
+textarea:active, textarea:focus,
+select:active, select:focus {
+	// border-color: $gold; 
+}
+
+input.validation-error, 
+textarea.validation-error, 
+select.validation-error,
+input.form-error, 
+textarea.form-error, 
+select.form-error{
+	border-color: #ff0000;
+}
+
+.form-thankyou h1 {
+	font-family: $heading-font-stack;
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+textarea {
+	min-height: 12em;
+	resize: none;
+}
+
+input[type=checkbox] {
+	width: auto;
+	height: auto;
+	-o-appearance: checkbox;
+	-moz-appearance: checkbox;
+	-webkit-appearance: checkbox;
+	appearance:checkbox;
+}
+
+input[type=radio] {
+	-o-appearance: radio;
+	-moz-appearance: radio;
+	-webkit-appearance: radio;
+	appearance: radio;	
+	border: none;
+	height: auto;
+	margin: 0px;
+	-o-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+input[type=file] {
+	padding: 0px;
+}
+
+input[type=submit] {
+	border: none;
+}
+
+select {
+	width: 100%;
+
+	vertical-align: middle;
+	margin: 0px;
+}
+
+.custom-select {
+	width: 100%;
+	position: relative;
+
+	color: $input-font-colour;
+	background-color: $input-background-colour;
+	margin-bottom: 1.125rem;
+}
+
+.custom-select select {
+	background-color: transparent;
+	position: relative;
+	z-index: 10;	
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 2.75em;
+	font-weight: normal;
+	cursor: pointer;
+	margin-bottom: 0px;
+	color: $input-font-colour;
+}
+
+.custom-select select.selection-made {
+	color: $input-font-colour;
+}
+
+.custom-select:after {
+	color: $input-font-colour;
+	content: "\f107";
+	display: block;
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	bottom: 0px;
+	height: 2em;
+	width: 2rem;
+	text-align: center;
+	font-size: 1.25rem;
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 300;
+	line-height: 2;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	margin: auto;
+	z-index: 0;
+}
+
+
+html.ie8 .custom-select,
+html.ie9 .custom-select {
+	overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+	color: $input-placeholder-colour;
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	color: $input-placeholder-colour;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: $input-placeholder-colour;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: $input-placeholder-colour;
+	opacity: 1;
+}
+
+.custom-checkbox {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+	margin-bottom: 1.125em;
+	cursor: pointer;
+	font-size: 0.875em;
+	font-family: $primary-font-stack;
+	letter-spacing: 0px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.custom-checkbox .checkbox  {
+	display: block;
+	float: left;
+	position: relative;
+	width: 1.625em;
+	height: 1.625em;
+	border: 1px solid #d8d8d8;
+	background-color: #ffffff;
+	border-radius: 4px;
+	margin: 0px;
+	margin-right: -2em;
+	text-align: center;
+	line-height: 1;
+	vertical-align: middle;
+	-o-transition: background-color 0.25s ease;
+	-moz-transition: background-color 0.25s ease;
+	-webkit-transition: background-color 0.25s ease;
+	-ms-transition: background-color 0.25s ease;
+	transition: background-color 0.25s ease;
+}
+
+.custom-checkbox input[type=checkbox] {
+	display: none;
+}
+
+.custom-checkbox input[type=checkbox]:checked + .checkbox {
+	// border-color: transparent;
+}
+
+.custom-checkbox input[type=checkbox]:checked + .checkbox:after {
+	vertical-align: middle;
+	content: "\f00c";
+	display: inline;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 300;
+	font-size: 1em;
+	text-rendering: auto;
+	line-height: 1.5;
+	color: #000000;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}
+
+.custom-checkbox .checkbox-text {
+	display: inline-block;
+	margin-left: 2em;
+	font-size: 1em;
+	vertical-align: middle;
+	max-width: 95%;
+	font-weight: normal;
+	text-align: left;
+}
+
+.custom-checkbox .checkbox-text > span {
+	display: inline-block;
+	font-size: 0.8125em;
+	line-height: 1.25;
+}
+
+html.ie8 .custom-checkbox input[type=checkbox] {
+	display: inline-block;
+	float: left;
+}
+
+html.ie8 .custom-checkbox .checkbox {
+	display: none;
+}
+
+.custom-checkbox .disabled + *,
+.custom-checkbox .disabled ~ * {
+	-o-opacity: 0.35;
+	-moz-opacity: 0.35;
+	-webkit-opacity: 0.35;
+	opacity: 0.35;
+}
+
+
+label.required:after {
+	content: " *";
+}
+
+.form-validation-errors {
+	color: #ff0000;
+}
+
+.button {
+	font-family: $button-font-stack;
+	font-weight: normal !important;
+	font-style: normal !important;
+	vertical-align: baseline;
+	-o-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 0px;
+	border-radius: 0px;
+	-o-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance:none;
+	outline: none;
+	display: inline-block;
+	font-size: 0.875rem;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 1rem 2.75rem 1rem 3em;
+	// height: 3rem;
+	line-height: 1rem;
+	background: $primary-button-background-colour none;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: 0;
+	@include add-transition();
+	
+	&:hover, &:active, &:focus {
+		background: $primary-button-background-colour--hover none;
+		color: #ffffff;
+		text-decoration: none;
+		outline: 0;
+	}
+}

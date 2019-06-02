@@ -1,22 +1,24 @@
-$primary-font-colour: #fff;
-$primary-font-colour--hover: #fff;
-$primary-background-colour: #fff;
-$secondary-font-colour: #fff;
-$secondary-background-colour: #fff;
+$black: #343741;
+$white: #ffffff;
+$light-grey: #eef0ed;
+$dark-grey: #3c3c3d;
 
-$primary-button-font-colour: #fff;
-$primary-button-background-colour: #fff;
-$primary-button-font-colour--hover: #fff;
-$primary-button-background-colour--hover: #fff;
-$secondary-button-font-colour: #fff;
-$secondary-button-background-colour: #fff;
-$secondary-button-font-colour--hover: #fff;
-$secondary-button-background-colour--hover: #000;
+$primary-colour: $black;
+$primary-font-colour: $black;
+$heading-font-colour: $black;
+$primary-button-font-colour: $white;
+$secondary-button-font-colour: $white;
 
-$red: red;
-$notification-font-colour: #fff;
-$notification-success-background-colour: green;
-$notification-danger-background-colour: red;
-$notification-info-background-colour: lightblue;
-$notification-warning-background-colour: yellow;
-$notification-neutral-background-colour: #eee;
+$primary-background-colour: $white;
+
+$primary-button-background-colour: $black;
+$secondary-button-background-colour: $primary-colour;
+
+$primary-button-background-colour--hover: #565A68;
+$secondary-button-background-colour--hover: #80694B;
+
+$input-font-colour: $black;
+$input-background-colour: $light_grey;
+$input-border-colour: $black;
+$input-placeholder-colour: $black;
+

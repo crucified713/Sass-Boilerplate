@@ -1,3 +1,18 @@
+@mixin transition($duration: .25s, $delay: 0s) {
+    -o-transition: all $duration ease $delay;
+    -moz-transition: all $duration ease $delay;
+    -ms-transition: all $duration ease $delay;
+    -webkit-transition: all $duration ease $delay;
+    transition: all $duration ease $delay;
+}
+
+@mixin transition-on($element, $duration, $delay) {
+    -o-transition: $element $duration ease $delay;
+    -moz-transition: $element $duration ease $delay;
+    -ms-transition: $element $duration ease $delay;
+    -webkit-transition: $element $duration ease $delay;
+    transition: $element $duration ease $delay;
+}
 
 @mixin add-transition() {
     -o-transition: all 0.25s ease;
@@ -6,11 +21,20 @@
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
+@mixin mobile() {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
 
-@mixin menu-toggle-transition() {
-    -o-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
-    -moz-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
-    -webkit-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
-    -ms-transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
-    transition: transform 0.375s ease 0.125s, opacity 0.125s linear 0.25s;
+@mixin tablet() {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin sm-screen() {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
 }

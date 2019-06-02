@@ -1,5 +1,22 @@
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0;
+	padding-right: 0; 
 
-// chuck other GLOBAL/base variables here //
+	@media (max-width: $max-width--xs)  { width: $container-width-xs; padding-left: 1.5rem; padding-right: 1.5rem; }
+	@media (min-width: $min-width--sm)  { width: $container-width-sm; }
+	@media (min-width: $min-width--md)  { width: $container-width-md; }
+	@media (min-width: $min-width--lg)  { width: $container-width-lg; }
+	@media (min-width: $min-width--xl)  { width: $container-width-xl; }
+
+}
+
+.center-block {
+	margin: auto;
+	float: none;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -7,6 +24,102 @@
 }
 .clearfix:after {
   clear: both;
+}
+
+article:before,
+article:after {
+  content: " ";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+
+section:before,
+section:after {
+  content: " ";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+
+main:before,
+main:after {
+  content: " ";
+  display: table;
+}
+main:after {
+  clear: both;
+}
+
+header:before,
+header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+
+.half-std-pd {
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+}
+.row.half-std-pd {
+	margin-left: -0.5em !important;
+	margin-right: -0.5em !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.std-pd {
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+}
+.row.std-pd {
+	margin-left: -1em !important;
+	margin-right: -1em !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.dbl-pd {
+	padding-left: 2em !important;
+	padding-right: 2em !important;
+}
+.row.dbl-pd {
+	margin-left: -2em !important;
+	margin-right: -2em !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.quad-pd {
+	padding-left: 4em !important;
+	padding-right: 4em !important;
+}
+.row.quad-pd {
+	margin-left: -4em !important;
+	margin-right: -4em !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+@media (max-width: $max-width--xs) {
+
+	.half-std-pd,
+	.std-pd,
+	.dbl-pd,
+	.quad-pd {
+		padding-left: 0.5em !important;
+		padding-right: 0.5em !important;
+	}
+
+	.row.half-std-pd,
+	.row.std-pd,
+	.row.dbl-pd,
+	.row.quad-pd {
+		margin-left: 0em !important;
+		margin-right: 0em !important;
+	}
 }
 
 .seo {
@@ -25,4 +138,217 @@
 	-o-user-select: none;
 	user-select: none;
 	cursor: pointer;
+}
+
+/* ##### STICKY FOOTER ##### */
+
+// html, body {
+// 	height: 100%;
+// }
+
+// #wrap {
+// 	min-height: 100%;
+// 	overflow-x: hidden;
+// 	@media(max-width: $max-width--xs) {
+// 		padding-bottom: 93px;
+// 	}
+// }
+
+// #main {
+// 	@media (max-width: $max-width--xs) { padding-bottom: 0px; }
+// 	@media (min-width: $min-width--sm) { padding-bottom: 41px; }
+// 	@media (min-width: $min-width--md) { padding-bottom: 48px; }
+// 	@media (min-width: $min-width--lg) { padding-bottom: 58px; }
+// 	@media (min-width: $min-width--xl) { padding-bottom: 58px; }
+// }
+
+// #footer-wrapper {
+// 	position: relative;
+// 	clear: both;
+
+// 	@media (max-width: $max-width--xs) { margin-top: 0px; }
+// 	@media (min-width: $min-width--sm) { margin-top: -41px; }
+// 	@media (min-width: $min-width--md) { margin-top: -48px; }
+// 	@media (min-width: $min-width--lg) { margin-top: -58px; }
+// 	@media (min-width: $min-width--xl) { margin-top: -58px; }
+// }
+
+
+/* ##### STICKY FOOTER ##### */
+
+@media (max-width: $max-width--xs) {
+
+	.container .container {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+}
+
+.image-center {
+	position: relative;
+	display: block;
+	height: 0px;
+	overflow: hidden;
+	padding-bottom: 62.5%;
+}
+.image-center > img,
+.image-center > a > img {
+	position: absolute;
+	display: block;
+	top: -50%;
+	right: -50%;
+	bottom: -50%;
+	left: -50%;
+	margin: auto;
+	height: auto;
+	width: 100% !important;
+}
+.image-center.byheight {
+	width: auto !important;
+	padding-bottom: 0!important;
+	height: 100%;
+}
+
+.image-center.byheight > img,
+.image-center.byheight > a > img {
+	height: 100% !important;
+	width: auto !important;
+	display: block !important;
+	visibility: hidden;
+}
+.image-center > iframe {
+	position: absolute;
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+.image-center {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.image-center.contain {
+	background-size: contain;
+}
+.image-center > img,
+.image-center > a > img {
+	display: none !important;
+}
+html.no-backgroundsize .image-center {
+	background-image: none !important;
+}
+html.no-backgroundsize .image-center > img,
+html.no-backgroundsize .image-center > a > img {
+	display: block !important;
+}
+
+.valign-parent {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+.valign {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+i.valign {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0px !important;
+	font-size: 0px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+[name=google_conversion_frame] {
+	position: absolute;
+	bottom: 0;
+}
+
+.artist-impression,
+.ai:after,
+.fancybox-slide--add-ai .fancybox-image-wrap:after {
+	display: block;
+	position: absolute;
+	bottom: 1.25em;
+	right: 1.5em;
+	color: #ffffff;
+	font-size: 0.625rem;
+	line-height: 1;
+	font-style: italic;
+	font-family: $primary-font-stack;
+}
+
+.ai {
+	position: relative;
+}
+
+.ai:after,
+.fancybox-slide--add-ai .fancybox-image-wrap:after {
+	content: "Artist's Impression";
+}
+.with-ai {
+	position: relative;
+}
+.magnify {
+	position: relative;
+	display: block;
+
+	&:after {
+		content: "\f00e";
+		position: absolute;
+		font-family: 'Font Awesome 5 Pro';
+		font-weight: 300;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 45px;
+		height: 45px;
+		font-size: 24px;
+		background-color: $white;
+		text-align: center;
+		padding-top: 3.4px;
+
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+.img-responsive.by-height {
+	height: 100%;
+	width: auto;
+}
+
+.image-responsive {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+// apply [.full-height-gallery] on html to get hero gallery full-height
+// more detail see components/_gallery.scss
+html.full-height-gallery {
+	&,
+	body,
+	#wrap,
+	#main {
+		height: 100%;
+	}
 }
